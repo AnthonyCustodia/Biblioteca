@@ -1,8 +1,11 @@
 package biblioteca.gerenciador;
 
+import biblioteca.livros.Livro;
+import biblioteca.usuarios.Usuario;
+
 public interface Emprestimo {
 
-    public void emprestar();
-    public void devolver();
+    void emprestar(Livro livro, Usuario usuario);
+    void devolver(Livro livro);
 
 }
